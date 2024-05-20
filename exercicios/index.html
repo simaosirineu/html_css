@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+    <P>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</P>
+
+    <picture>
+        <source media="(min-width: 1050px)" srcset="foto-g.png" type="image/png">
+        <source media="(min-width: 768px)" srcset="foto-m.png" type="image/png">
+       <img src="foto-p.png" alt="imagem letra P">
+       
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <audio src="Science Montage - Jeremy Blake.mp3" controls ></audio>
+
+
+    
+    <!--Mp3 WAV OGG-->
+
+    <h2>Outra forma de adicionar audio</h2>
+
+    <audio preload="metadata" autoplay controls  loop>
+        <source src="Science Montage - Jeremy Blake.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <P>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></P>
+
+    </audio>
+    
+</body>
+</html>
