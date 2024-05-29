@@ -14,6 +14,7 @@
            
             width: 500px;
             border-collapse: collapse;
+            position: relative;
             
             
             
@@ -34,7 +35,42 @@
         thead, tfoot {
             background-color: #383838;
             color: white;
+
+
         }
+
+        thead > tr > th {
+
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        /* 
+            EFEITO ZEBRADO
+
+            tbody > tr:nth-child(2n)
+            tbody > tr:nth-child(2n-1)
+            tbody > tr:nth-child(odd)
+            tbody > tr:nth-child(even)
+
+            exemplo linhas pares: 
+
+            tbody > tr:nth-child(even) {
+
+                background-color: lightgray;
+            }
+
+
+            exemplo linhas ímpares: 
+
+            tbody > tr:nth-child(odd) {
+
+                background-color: lightgray;
+            }
+
+        
+        */
 
         tbody > tr:nth-child(even) {
 
@@ -47,6 +83,24 @@
     </style>
 </head>
 <body>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at harum dignissimos explicabo laborum consequuntur odit, quo neque temporibus itaque sunt quisquam error amet vel inventore ipsa tenetur porro necessitatibus.
+        Eos sequi quia eligendi officiis illum nesciunt dicta ullam aut, debitis autem dolorum laboriosam numquam saepe sapiente iusto quidem voluptate minima veniam modi dolorem, nam sint assumenda enim ea! Voluptate?
+        Distinctio facilis ad expedita suscipit sapiente error et repellendus asperiores magnam doloremque, quae deleniti in repellat, labore dolores quos delectus iusto, adipisci minima. Quae, consequuntur. Animi tempore autem dolor amet.
+        Sint, commodi! Rerum explicabo corporis quidem, nesciunt perspiciatis earum officia aliquid quis? Laborum, inventore at, nisi reiciendis, obcaecati dicta ipsa rerum aut sequi incidunt impedit debitis quibusdam. Saepe, obcaecati officia?
+        Illum natus saepe hic minus incidunt corrupti aperiam deleniti enim est ab officiis laudantium architecto ducimus recusandae nostrum quisquam unde, neque illo aut cumque fugit ipsum numquam perspiciatis? Veritatis, tempore.
+        Ullam qui et ratione, animi veniam placeat eaque ex eligendi aliquid temporibus tempora reprehenderit natus sapiente beatae consectetur minus. Reiciendis asperiores excepturi magnam? Corporis quis nisi nesciunt expedita laudantium quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae deserunt neque quo asperiores, nesciunt nihil, cupiditate itaque facilis ducimus sed iure ex accusamus illum voluptatem laudantium aut, libero maiores. Officiis!
+        Ipsam distinctio, ducimus veritatis dolor eligendi necessitatibus placeat cum fugit nam, voluptatibus facere doloremque vel, eaque natus iusto quo id! Soluta natus ad consequuntur reprehenderit voluptatum delectus, vel odit quas?
+        Consequuntur facere assumenda odio quidem hic tenetur minima nesciunt ducimus eos aliquam, vitae dolor nobis placeat odit laborum aliquid at non rem? Provident voluptates eos nesciunt obcaecati repellat neque dignissimos!
+        Aspernatur alias dolore omnis eos, quod adipisci nisi nobis! Ut rem ducimus nostrum nulla nemo, recusandae hic excepturi optio assumenda, aperiam voluptatem adipisci, sunt exercitationem accusamus molestias omnis delectus voluptate!
+        Suscipit debitis laborum aut ea error ratione esse earum sequi exercitationem minus! Dolore non rem saepe, nam aliquid ducimus architecto nostrum magnam est dolores totam minus obcaecati iusto expedita ipsa!
+        Cupiditate magni fugiat nesciunt, maxime id numquam quod eius nemo, illum molestiae ratione explicabo odio velit ex quae iusto atque laboriosam rem inventore aperiam consequatur ipsa rerum? Deleniti, ipsum repudiandae!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores hic minima harum adipisci quo corporis repellat vitae, excepturi, est quos? Repellendus laboriosam voluptas placeat illum eos, culpa ex recusandae?
+        Sunt, iste, voluptates voluptatem maiores iusto perspiciatis sed adipisci quae rerum vitae commodi necessitatibus. Rem cumque ratione ex asperiores! Reiciendis non, vero eveniet omnis fuga ipsam accusamus quia laudantium architecto?
+        Sunt odio eveniet aperiam, rerum reiciendis dolorem adipisci error omnis vero consequuntur temporibus at. Odit consequuntur, possimus hic sed dignissimos porro aliquam labore numquam eaque perferendis, vero corrupti culpa facilis!
+        Aut rerum repellat, nihil saepe laudantium dolorem culpa quia harum et accusamus ab alias blanditiis tempora ratione natus accusantium impedit labore ipsa non, in ad minus voluptate. Fugit, veritatis repudiandae?
+        Aut alias, officia deserunt illum voluptates modi iste dolores, sint incidunt quidem aspernatur eius porro voluptas perspiciatis vero beatae dolor repellat minus sequi odit earum? Ratione dolorem officiis quasi voluptate?</p>
     <h1>Uso de Tabelas Grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
@@ -194,6 +248,23 @@
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at harum dignissimos explicabo laborum consequuntur odit, quo neque temporibus itaque sunt quisquam error amet vel inventore ipsa tenetur porro necessitatibus.
+    Eos sequi quia eligendi officiis illum nesciunt dicta ullam aut, debitis autem dolorum laboriosam numquam saepe sapiente iusto quidem voluptate minima veniam modi dolorem, nam sint assumenda enim ea! Voluptate?
+    Distinctio facilis ad expedita suscipit sapiente error et repellendus asperiores magnam doloremque, quae deleniti in repellat, labore dolores quos delectus iusto, adipisci minima. Quae, consequuntur. Animi tempore autem dolor amet.
+    Sint, commodi! Rerum explicabo corporis quidem, nesciunt perspiciatis earum officia aliquid quis? Laborum, inventore at, nisi reiciendis, obcaecati dicta ipsa rerum aut sequi incidunt impedit debitis quibusdam. Saepe, obcaecati officia?
+    Illum natus saepe hic minus incidunt corrupti aperiam deleniti enim est ab officiis laudantium architecto ducimus recusandae nostrum quisquam unde, neque illo aut cumque fugit ipsum numquam perspiciatis? Veritatis, tempore.
+    Ullam qui et ratione, animi veniam placeat eaque ex eligendi aliquid temporibus tempora reprehenderit natus sapiente beatae consectetur minus. Reiciendis asperiores excepturi magnam? Corporis quis nisi nesciunt expedita laudantium quia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae deserunt neque quo asperiores, nesciunt nihil, cupiditate itaque facilis ducimus sed iure ex accusamus illum voluptatem laudantium aut, libero maiores. Officiis!
+    Ipsam distinctio, ducimus veritatis dolor eligendi necessitatibus placeat cum fugit nam, voluptatibus facere doloremque vel, eaque natus iusto quo id! Soluta natus ad consequuntur reprehenderit voluptatum delectus, vel odit quas?
+    Consequuntur facere assumenda odio quidem hic tenetur minima nesciunt ducimus eos aliquam, vitae dolor nobis placeat odit laborum aliquid at non rem? Provident voluptates eos nesciunt obcaecati repellat neque dignissimos!
+    Aspernatur alias dolore omnis eos, quod adipisci nisi nobis! Ut rem ducimus nostrum nulla nemo, recusandae hic excepturi optio assumenda, aperiam voluptatem adipisci, sunt exercitationem accusamus molestias omnis delectus voluptate!
+    Suscipit debitis laborum aut ea error ratione esse earum sequi exercitationem minus! Dolore non rem saepe, nam aliquid ducimus architecto nostrum magnam est dolores totam minus obcaecati iusto expedita ipsa!
+    Cupiditate magni fugiat nesciunt, maxime id numquam quod eius nemo, illum molestiae ratione explicabo odio velit ex quae iusto atque laboriosam rem inventore aperiam consequatur ipsa rerum? Deleniti, ipsum repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores hic minima harum adipisci quo corporis repellat vitae, excepturi, est quos? Repellendus laboriosam voluptas placeat illum eos, culpa ex recusandae?
+    Sunt, iste, voluptates voluptatem maiores iusto perspiciatis sed adipisci quae rerum vitae commodi necessitatibus. Rem cumque ratione ex asperiores! Reiciendis non, vero eveniet omnis fuga ipsam accusamus quia laudantium architecto?
+    Sunt odio eveniet aperiam, rerum reiciendis dolorem adipisci error omnis vero consequuntur temporibus at. Odit consequuntur, possimus hic sed dignissimos porro aliquam labore numquam eaque perferendis, vero corrupti culpa facilis!
+    Aut rerum repellat, nihil saepe laudantium dolorem culpa quia harum et accusamus ab alias blanditiis tempora ratione natus accusantium impedit labore ipsa non, in ad minus voluptate. Fugit, veritatis repudiandae?
+    Aut alias, officia deserunt illum voluptates modi iste dolores, sint incidunt quidem aspernatur eius porro voluptas perspiciatis vero beatae dolor repellat minus sequi odit earum? Ratione dolorem officiis quasi voluptate?</p>
     
 </body>
 </html>
